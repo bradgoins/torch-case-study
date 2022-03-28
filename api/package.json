@@ -1,8 +1,8 @@
 {
-  "name": "horizon-api",
+  "name": "torch-case-study-api",
   "version": "1.0.0",
   "private": true,
-  "description": "Express REST API for Horizon",
+  "description": "Express REST API for Torch Case Study",
   "main": "server.js",
   "engines": {
     "node": "v12.11.1",
