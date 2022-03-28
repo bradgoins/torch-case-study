@@ -1,0 +1,20 @@
+version: "3"
+services:
+  api:
+    image: node:12
+    volumes:
+      - ./api/:/usr/src/service
+    environment:
+      - API_KEY=Wd7BZgCuXm7myfPJP8dtJ8wQedmqUW012J24CEB4
+    working_dir: /usr/src/service
+    ports:
+      - 3001:3001
+    expose:
+      - 3001
+    command: >
+      bash -c "npm install -g nodemon
+      && npm install
+      && npm run start -host 0.0.0.0"
+
+volumes:
+  sana_mongo_volume:
