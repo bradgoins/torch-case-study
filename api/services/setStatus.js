@@ -20,7 +20,7 @@ function setStatus(delays) {
         if (!ROUTES[key].total_time_delayed) {
           total_time_delayed = currentTime - START_TIME;
         } else {
-          total_time_delayed += currentTime - ROUTES[k].time_updated;
+          total_time_delayed += currentTime - ROUTES[key].time_updated;
         }
 
         ROUTES[key].total_time_delayed = total_time_delayed;
